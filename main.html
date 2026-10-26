@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+<title>FireSite</title>
+<style>
+
+ #infoBD {
+    margin-left: 50vw;
+ }
+
+  #info {
+    display:none;
+    margin-left: -10vw;
+ }
+</style>
+</head>
+<html>
+    <div id = "infoBD">
+    <button id="infoB" onclick="showInfo()">Information</button>
+    <div id="info">
+        The amount of fires that happen in California every 24 hours:
+    </div>
+    </div>
+</html>
+
+<script>
+function showInfo() {
+
+   const Div = document.getElementById("info")
+ if (Div.style.display === "none" || Div.style.display === "") {
+    Div.style.display = 'block';
+ } else {
+    Div.style.display = "none"
+ }
+}
+
+</script>
